@@ -395,23 +395,23 @@ export default class WebPlatform {
         this._keydownListener = (e) => {
             keyhandler(e);
         };
-        window.addEventListener('keydown', this._keydownListener);
+        // window.addEventListener('keydown', this._keydownListener);
     }
 
     registerKeyupHandler(keyhandler) {
         this._keyupListener = (e) => {
             keyhandler(e);
         };
-        window.addEventListener('keyup', this._keyupListener);
+        // window.addEventListener('keyup', this._keyupListener);
     }
 
     _removeKeyHandler() {
         if (this._keydownListener) {
-            window.removeEventListener('keydown', this._keydownListener);
+            // window.removeEventListener('keydown', this._keydownListener);
         }
 
         if (this._keyupListener) {
-            window.removeEventListener('keyup', this._keyupListener);
+            // window.removeEventListener('keyup', this._keyupListener);
         }
     }
 
@@ -419,12 +419,12 @@ export default class WebPlatform {
         this._clickListener = e => {
             clickHandler(e);
         };
-        window.addEventListener('mousedown', this._clickListener);
+        // window.addEventListener('mousedown', this._clickListener);
     }
 
     _removeClickHandler() {
         if (this._clickListener) {
-            window.removeEventListener('mousedown', this._clickListener);
+            // window.removeEventListener('mousedown', this._clickListener);
         }
     }
 
@@ -432,7 +432,7 @@ export default class WebPlatform {
         this._hoverListener = e => {
             hoverHandler(e);
         };
-        window.addEventListener('mousemove', this._hoverListener);
+        // window.addEventListener('mousemove', this._hoverListener);
     }
 
     _removeHoverHandler() {
@@ -445,12 +445,12 @@ export default class WebPlatform {
         this._scrollWheelListener = e => {
             registerScrollWheelHandler(e);
         }
-        window.addEventListener('wheel', this._scrollWheelListener);
+        // window.addEventListener('wheel', this._scrollWheelListener);
     }
 
     _removeScrollWheelHandler() {
         if (this._scrollWheelListener) {
-            window.removeEventListener('wheel', this._scrollWheelListener);
+            // window.removeEventListener('wheel', this._scrollWheelListener);
         }
     }
 
