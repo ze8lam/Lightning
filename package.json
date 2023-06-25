@@ -11,7 +11,7 @@
     ".": {
       "import": {
         "types": "./dist/index.d.ts",
-        "default": "./dist/lightning.esm.js"
+        "default": "./index.js"
       },
       "require": {
         "types": "./dist/index.d.ts",
